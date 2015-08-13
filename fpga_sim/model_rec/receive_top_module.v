@@ -10,7 +10,7 @@ module   receive_top_module   (
 
  //output
     
-
+    output  [7:0]      Trans_Data
 
    );
 
@@ -83,6 +83,12 @@ module   receive_top_module   (
         wire [7:0]              Trans_Data1  ;
       
         wire [7:0]              Trans_Data2  ;
+
+        wire [8:0]              Trans_Data_buf;
+
+        wire  [1:0]             Zoom          ;
+
+        wire                    Envelop       ;
       
 
 //reg
@@ -110,6 +116,17 @@ module   receive_top_module   (
 	reg [7:0]              Interlace               ;
 
         reg [1:0]              Toggle                  ;
+
+
+       reg                     CC3200_SPI_CS           ;
+
+   
+       reg    [11:0]           cs_num                  ;
+
+
+
+    assign      Zoom         =     2'b00        ;
+
 
 
 
@@ -221,6 +238,37 @@ module   receive_top_module   (
 
 
 
+       always @(posedge clk_50M or negedge reset_n ) 
+
+        begin
+               if  (!reset_n)
+                     
+                  begin
+                            cs_num         <=   0;                        
+                           CC3200_SPI_CS   <=   0;       
+                  end
+               else  if (cs_num<3) 
+                  begin
+                            cs_num         <=  cs_num +1 ;                        
+                           CC3200_SPI_CS   <=   0;       
+                  end             
+              else  if (cs_num<6) 
+                  begin
+                            cs_num         <=  cs_num +1 ;                        
+                           CC3200_SPI_CS   <=   1;       
+                  end     
+             else
+                 begin
+                            cs_num         <=   0;                        
+                           CC3200_SPI_CS   <=   0;       
+                  end 
+
+       end
+
+
+       
+
+
 //initiation
 
 
@@ -259,6 +307,8 @@ receive_data_gen   receive_data_gen  (
           .RX_Gate   (RX_Gate),
 
           .Sample_Gate(Sample_Gate),
+        
+          .Envelop     (Envelop),
  
           .End_Gate  (End_Gate)
  );
@@ -404,8 +454,10 @@ IMG_TRI_BUFFER	IMG_TRI_BUFFER_inst (
 	
 	
 
-assign Trans_Data ={1'b0,Trans_Data1} + {1'b0,Trans_Data2};
+  assign Trans_Data_buf = {1'b0,Trans_Data1} + {1'b0,Trans_Data2};
 	
+ 
+  assign  Trans_Data    =  Trans_Data_buf[8:1];
 
   
     

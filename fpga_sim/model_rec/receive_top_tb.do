@@ -3,9 +3,19 @@
 
   vlib    work  
   
+  vlib   auk_dspip_lib
+
+  vlog   ./src_trans/*.v
+
   vlog  ./*.v
   
-  vlog  ../src_trans/*.v
+  vlog  ../src_rec/*.v
+
+ vcom   ../src_rec/*.vhd
+
+
+ #
+  
  
  
 
@@ -25,11 +35,18 @@
   vmap   cycloneiii_ver         /home/wong/altera_13_0/alib/verilog_libs/cycloneiii_ver
 
   vmap   cyclone_ver            /home/wong/altera_13_0/alib/verilog_libs/cyclone_ver
+
+
+  vmap   auk_dspip_lib         auk_dspip_lib  
+
+
+
+
    
  
  #vsim the top
 
-  vsim  -t ps  -novopt  +notimingchecks  -L altera_mf_ver  -L  lpm_ver  -L  sgate_ver  -L   altgxb_ver  -L  cyclone_ver  -L  cycloneiii_ver  -L   cycloneiiils_ver    work.receive_top_module_tb 
+  vsim  -t ps  -novopt  +notimingchecks  -L altera_mf_ver  -L  lpm_ver  -L  sgate_ver  -L   altgxb_ver  -L  cyclone_ver  -L  cycloneiii_ver  -L   cycloneiiils_ver  -L  auk_dspip_lib    work.transmit_test_entity_tb 
 
   
  onerror {resume}
@@ -41,7 +58,7 @@
   
 #View sim_tb_top signals in waveform#
 
-add wave sim:receive_top_module_tb/*
+add wave sim:transmit_test_entity_tb/*
 
 
 #Change radix to Hexadecimal#
@@ -59,6 +76,3 @@ run  1us
 
 stop
 
-
-
- 

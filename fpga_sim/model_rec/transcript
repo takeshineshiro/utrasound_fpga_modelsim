@@ -1,0 +1,94 @@
+# //  ModelSim SE 6.6f_2 Jan 10 2012 Linux 3.16.0-45-generic
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do ./receive_top_tb.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE vlog 6.6f_2 Compiler 2012.01 Jan 10 2012
+# -- Compiling module EmitOneCH
+# -- Compiling module HW_SW
+# -- Compiling module R_SEQ
+# -- Compiling module Test_Line
+# -- Compiling module Transmit
+# 
+# Top level modules:
+# 	Transmit
+# Model Technology ModelSim SE vlog 6.6f_2 Compiler 2012.01 Jan 10 2012
+# -- Compiling module cc3200_test_model
+# -- Compiling module cmd_gen_submodule
+# -- Compiling module data_gen_submodule
+# -- Compiling module receive_data_gen
+# -- Compiling module receive_top_module
+# -- Compiling module receive_top_module_tb
+# -- Compiling module transmit_test_entity
+# -- Compiling module transmit_test_model
+# 
+# Top level modules:
+# 	receive_top_module_tb
+# 	transmit_test_entity
+# Model Technology ModelSim SE vlog 6.6f_2 Compiler 2012.01 Jan 10 2012
+# -- Compiling module ABS
+# -- Compiling module Apod
+# -- Compiling module Coherent_Coff
+# -- Compiling module DAS_RF
+# -- Compiling module DIV27_19
+# -- Compiling module DPRAM
+# -- Compiling module DynamicFocus
+# -- Compiling module IMG_BUFFER
+# -- Compiling module IMG_TRI_BUFFER
+# -- Compiling module LOG_Table
+# -- Compiling module Receive
+# -- Compiling module Test
+# -- Compiling module butterfly_radix4_1st
+# -- Compiling module butterfly_radix4_2nd
+# -- Compiling module butterfly_unit_radix4
+# -- Compiling module fft_8
+# -- Compiling module lf
+# -- Compiling module lf_st
+# -- Compiling module matchfilter
+# -- Compiling module matchfilter_st
+# -- Compiling module mult12_8
+# -- Compiling module mult16
+# -- Compiling module mult16_12
+# -- Compiling module mult30_9
+# -- Compiling module mult88
+# -- Compiling module mult8x8
+# 
+# Top level modules:
+# 	ABS
+# 	IMG_BUFFER
+# 	IMG_TRI_BUFFER
+# 	LOG_Table
+# 	Receive
+# 	Test
+# 	butterfly_radix4_1st
+# 	butterfly_radix4_2nd
+# 	lf
+# 	lf_st
+# 	matchfilter
+# 	matchfilter_st
+# 	mult16_12
+# 	mult30_9
+# 	mult88
+# 	mult8x8
+# Model Technology ModelSim SE vcom 6.6f_2 Compiler 2012.01 Jan 10 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# ** Error: ../src_rec/lf_ast.vhd(32): Library auk_dspip_lib not found.
+# ** Error: ../src_rec/lf_ast.vhd(33): (vcom-1136) Unknown identifier "auk_dspip_lib".
+# ** Error: ../src_rec/lf_ast.vhd(36): VHDL Compiler exiting
+# ** Error: /home/wong/modelsim/modeltech/linux/vcom failed.
+# Error in macro ././receive_top_tb.do line 13
+# /home/wong/modelsim/modeltech/linux/vcom failed.
+#     while executing
+# "vcom   ../src_rec/*.vhd"
+# 
+#  
+quit
