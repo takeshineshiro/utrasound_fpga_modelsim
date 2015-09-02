@@ -1,4 +1,4 @@
-# //  ModelSim SE 6.6f_2 Jan 10 2012 Linux 3.16.0-37-generic
+# //  ModelSim SE 6.6f_2 Jan 10 2012 Linux 3.16.0-46-generic
 # //
 # //  Copyright 1991-2012 Mentor Graphics Corporation
 # //              All Rights Reserved.
@@ -37,63 +37,27 @@
 # Modifying /home/wong/modelsim/modeltech/linux/../modelsim.ini
 # Modifying /home/wong/modelsim/modeltech/linux/../modelsim.ini
 # vsim +notimingchecks -L altera_mf_ver -L lpm_ver -L sgate_ver -L altgxb_ver -L cyclone_ver -L cycloneiii_ver -L cycloneiiils_ver -t ps -novopt work.transmit_test_entity_tb 
-# Refreshing /home/wong/lepu_fpga/fpga_sim/model/work.transmit_test_entity_tb
+# Refreshing /home/wong/utrasound_fpga_modelsim/fpga_sim/model_trans/work.transmit_test_entity_tb
 # Loading work.transmit_test_entity_tb
-# Refreshing /home/wong/lepu_fpga/fpga_sim/model/work.transmit_test_entity
+# Refreshing /home/wong/utrasound_fpga_modelsim/fpga_sim/model_trans/work.transmit_test_entity
 # Loading work.transmit_test_entity
-# Refreshing /home/wong/lepu_fpga/fpga_sim/model/work.transmit_test_model
+# Refreshing /home/wong/utrasound_fpga_modelsim/fpga_sim/model_trans/work.transmit_test_model
 # Loading work.transmit_test_model
-# Refreshing /home/wong/lepu_fpga/fpga_sim/model/work.cc3200_test_model
+# Refreshing /home/wong/utrasound_fpga_modelsim/fpga_sim/model_trans/work.cc3200_test_model
 # Loading work.cc3200_test_model
-# Refreshing /home/wong/lepu_fpga/fpga_sim/model/work.Transmit
+# Refreshing /home/wong/utrasound_fpga_modelsim/fpga_sim/model_trans/work.Transmit
 # Loading work.Transmit
-# Refreshing /home/wong/lepu_fpga/fpga_sim/model/work.Test_Line
+# Refreshing /home/wong/utrasound_fpga_modelsim/fpga_sim/model_trans/work.Test_Line
 # Loading work.Test_Line
 # Loading altera_mf_ver.altsyncram
 # Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# Refreshing /home/wong/lepu_fpga/fpga_sim/model/work.EmitOneCH
+# Refreshing /home/wong/utrasound_fpga_modelsim/fpga_sim/model_trans/work.EmitOneCH
 # Loading work.EmitOneCH
-# Refreshing /home/wong/lepu_fpga/fpga_sim/model/work.HW_SW
+# Refreshing /home/wong/utrasound_fpga_modelsim/fpga_sim/model_trans/work.HW_SW
 # Loading work.HW_SW
-# Refreshing /home/wong/lepu_fpga/fpga_sim/model/work.R_SEQ
+# Refreshing /home/wong/utrasound_fpga_modelsim/fpga_sim/model_trans/work.R_SEQ
 # Loading work.R_SEQ
-# ** Warning: (vsim-3015) ./transmit_test_model.v(187): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'focus_num'. The port definition is at: ./cc3200_test_model.v(18).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/transmit_test_model/cc3200_test_model
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(57): [PCDPC] - Port size (8 or 8) does not match connection size (16) for port 'q'. The port definition is at: ../src_trans/Test_Line.v(42).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/Test_Line_inst
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(317): [PCDPC] - Port size (7 or 7) does not match connection size (6) for port 'Emit_Width'. The port definition is at: ../src_trans/EmitOneCH.v(7).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/EmitOneCH1
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(327): [PCDPC] - Port size (7 or 7) does not match connection size (6) for port 'Emit_Width'. The port definition is at: ../src_trans/EmitOneCH.v(7).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/EmitOneCH2
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(337): [PCDPC] - Port size (7 or 7) does not match connection size (6) for port 'Emit_Width'. The port definition is at: ../src_trans/EmitOneCH.v(7).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/EmitOneCH3
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(347): [PCDPC] - Port size (7 or 7) does not match connection size (6) for port 'Emit_Width'. The port definition is at: ../src_trans/EmitOneCH.v(7).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/EmitOneCH4
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(357): [PCDPC] - Port size (7 or 7) does not match connection size (6) for port 'Emit_Width'. The port definition is at: ../src_trans/EmitOneCH.v(7).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/EmitOneCH5
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(367): [PCDPC] - Port size (7 or 7) does not match connection size (6) for port 'Emit_Width'. The port definition is at: ../src_trans/EmitOneCH.v(7).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/EmitOneCH6
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(378): [PCDPC] - Port size (7 or 7) does not match connection size (6) for port 'Emit_Width'. The port definition is at: ../src_trans/EmitOneCH.v(7).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/EmitOneCH7
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(389): [PCDPC] - Port size (7 or 7) does not match connection size (6) for port 'Emit_Width'. The port definition is at: ../src_trans/EmitOneCH.v(7).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/EmitOneCH8
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(399): [PCDPC] - Port size (7 or 7) does not match connection size (6) for port 'Emit_Width'. The port definition is at: ../src_trans/EmitOneCH.v(7).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/EmitOneCH9
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(409): [PCDPC] - Port size (7 or 7) does not match connection size (6) for port 'Emit_Width'. The port definition is at: ../src_trans/EmitOneCH.v(7).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/EmitOneCH10
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(420): [PCDPC] - Port size (7 or 7) does not match connection size (6) for port 'Emit_Width'. The port definition is at: ../src_trans/EmitOneCH.v(7).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/EmitOneCH11
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(430): [PCDPC] - Port size (7 or 7) does not match connection size (6) for port 'Emit_Width'. The port definition is at: ../src_trans/EmitOneCH.v(7).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/EmitOneCH12
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(440): [PCDPC] - Port size (7 or 7) does not match connection size (6) for port 'Emit_Width'. The port definition is at: ../src_trans/EmitOneCH.v(7).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/EmitOneCH13
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(450): [PCDPC] - Port size (7 or 7) does not match connection size (6) for port 'Emit_Width'. The port definition is at: ../src_trans/EmitOneCH.v(7).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/EmitOneCH14
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(460): [PCDPC] - Port size (7 or 7) does not match connection size (6) for port 'Emit_Width'. The port definition is at: ../src_trans/EmitOneCH.v(7).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/EmitOneCH15
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(470): [PCDPC] - Port size (7 or 7) does not match connection size (6) for port 'Emit_Width'. The port definition is at: ../src_trans/EmitOneCH.v(7).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/EmitOneCH16
 # hexadecimal
 # 1
 # 1
@@ -120,73 +84,4 @@
 # No such file or directory. (errno = ENOENT)    : /home/wong/altera_13_0/quartus/eda/sim_lib/altera_mf.v(45501)
 #    Time: 0 ps  Iteration: 0  Instance: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/R_SEQ_inst/altsyncram_component
 # Break key hit 
-# Break in VlGenerateBlock clk0_on_outa_gen at /home/wong/altera_13_0/quartus/eda/sim_lib/altera_mf.v line 46841
-# Simulation Breakpoint: Break in VlGenerateBlock clk0_on_outa_gen at /home/wong/altera_13_0/quartus/eda/sim_lib/altera_mf.v line 46841
-# MACRO ././transmit_test_entity.do PAUSED at line 56
-add wave sim:/transmit_test_entity_tb/transmit_test_entity/transmit_test_model/cc3200_test_model/*
-run
-# Break key hit 
-# Break in Module altsyncram at /home/wong/altera_13_0/quartus/eda/sim_lib/altera_mf.v line 46639
-# Simulation Breakpoint: Break in Module altsyncram at /home/wong/altera_13_0/quartus/eda/sim_lib/altera_mf.v line 46639
-# MACRO ././transmit_test_entity.do PAUSED at line 58
-restart
-# ** Warning: (vsim-3015) ./transmit_test_model.v(187): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'focus_num'. The port definition is at: ./cc3200_test_model.v(18).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/transmit_test_model/cc3200_test_model
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(57): [PCDPC] - Port size (8 or 8) does not match connection size (16) for port 'q'. The port definition is at: ../src_trans/Test_Line.v(42).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/Test_Line_inst
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(317): [PCDPC] - Port size (7 or 7) does not match connection size (6) for port 'Emit_Width'. The port definition is at: ../src_trans/EmitOneCH.v(7).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/EmitOneCH1
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(327): [PCDPC] - Port size (7 or 7) does not match connection size (6) for port 'Emit_Width'. The port definition is at: ../src_trans/EmitOneCH.v(7).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/EmitOneCH2
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(337): [PCDPC] - Port size (7 or 7) does not match connection size (6) for port 'Emit_Width'. The port definition is at: ../src_trans/EmitOneCH.v(7).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/EmitOneCH3
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(347): [PCDPC] - Port size (7 or 7) does not match connection size (6) for port 'Emit_Width'. The port definition is at: ../src_trans/EmitOneCH.v(7).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/EmitOneCH4
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(357): [PCDPC] - Port size (7 or 7) does not match connection size (6) for port 'Emit_Width'. The port definition is at: ../src_trans/EmitOneCH.v(7).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/EmitOneCH5
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(367): [PCDPC] - Port size (7 or 7) does not match connection size (6) for port 'Emit_Width'. The port definition is at: ../src_trans/EmitOneCH.v(7).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/EmitOneCH6
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(378): [PCDPC] - Port size (7 or 7) does not match connection size (6) for port 'Emit_Width'. The port definition is at: ../src_trans/EmitOneCH.v(7).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/EmitOneCH7
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(389): [PCDPC] - Port size (7 or 7) does not match connection size (6) for port 'Emit_Width'. The port definition is at: ../src_trans/EmitOneCH.v(7).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/EmitOneCH8
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(399): [PCDPC] - Port size (7 or 7) does not match connection size (6) for port 'Emit_Width'. The port definition is at: ../src_trans/EmitOneCH.v(7).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/EmitOneCH9
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(409): [PCDPC] - Port size (7 or 7) does not match connection size (6) for port 'Emit_Width'. The port definition is at: ../src_trans/EmitOneCH.v(7).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/EmitOneCH10
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(420): [PCDPC] - Port size (7 or 7) does not match connection size (6) for port 'Emit_Width'. The port definition is at: ../src_trans/EmitOneCH.v(7).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/EmitOneCH11
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(430): [PCDPC] - Port size (7 or 7) does not match connection size (6) for port 'Emit_Width'. The port definition is at: ../src_trans/EmitOneCH.v(7).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/EmitOneCH12
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(440): [PCDPC] - Port size (7 or 7) does not match connection size (6) for port 'Emit_Width'. The port definition is at: ../src_trans/EmitOneCH.v(7).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/EmitOneCH13
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(450): [PCDPC] - Port size (7 or 7) does not match connection size (6) for port 'Emit_Width'. The port definition is at: ../src_trans/EmitOneCH.v(7).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/EmitOneCH14
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(460): [PCDPC] - Port size (7 or 7) does not match connection size (6) for port 'Emit_Width'. The port definition is at: ../src_trans/EmitOneCH.v(7).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/EmitOneCH15
-# ** Warning: (vsim-3015) ../src_trans/Transmit.v(470): [PCDPC] - Port size (7 or 7) does not match connection size (6) for port 'Emit_Width'. The port definition is at: ../src_trans/EmitOneCH.v(7).
-#         Region: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/EmitOneCH16
-run -all
-# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "Test_Line.mif" for reading.
-# No such file or directory. (errno = ENOENT)    : /home/wong/altera_13_0/quartus/eda/sim_lib/altera_mf.v(187)
-#    Time: 0 ps  Iteration: 0  Instance: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/Test_Line_inst/altsyncram_component
-# ERROR: cannot read Test_Line.mif.
-# ** Warning: (vsim-7) Failed to open readmem file "Test_Line.ver" in read mode.
-# No such file or directory. (errno = ENOENT)    : /home/wong/altera_13_0/quartus/eda/sim_lib/altera_mf.v(45501)
-#    Time: 0 ps  Iteration: 0  Instance: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/Test_Line_inst/altsyncram_component
-# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "HV_SW.mif" for reading.
-# No such file or directory. (errno = ENOENT)    : /home/wong/altera_13_0/quartus/eda/sim_lib/altera_mf.v(187)
-#    Time: 0 ps  Iteration: 0  Instance: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/HW_SW_inst/altsyncram_component
-# ERROR: cannot read HV_SW.mif.
-# ** Warning: (vsim-7) Failed to open readmem file "HV_SW.ver" in read mode.
-# No such file or directory. (errno = ENOENT)    : /home/wong/altera_13_0/quartus/eda/sim_lib/altera_mf.v(45501)
-#    Time: 0 ps  Iteration: 0  Instance: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/HW_SW_inst/altsyncram_component
-# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "R_SEQ.mif" for reading.
-# No such file or directory. (errno = ENOENT)    : /home/wong/altera_13_0/quartus/eda/sim_lib/altera_mf.v(187)
-#    Time: 0 ps  Iteration: 0  Instance: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/R_SEQ_inst/altsyncram_component
-# ERROR: cannot read R_SEQ.mif.
-# ** Warning: (vsim-7) Failed to open readmem file "R_SEQ.ver" in read mode.
-# No such file or directory. (errno = ENOENT)    : /home/wong/altera_13_0/quartus/eda/sim_lib/altera_mf.v(45501)
-#    Time: 0 ps  Iteration: 0  Instance: /transmit_test_entity_tb/transmit_test_entity/Transmit_module/R_SEQ_inst/altsyncram_component
-# Break key hit 
-# Break in VlGenerateBlock clk0_on_outa_gen at /home/wong/altera_13_0/quartus/eda/sim_lib/altera_mf.v line 46841
+# Break in Module transmit_test_model at ./transmit_test_model.v line 139

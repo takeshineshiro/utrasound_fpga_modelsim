@@ -48,7 +48,7 @@ module Transmit(
 	
 	//replace rom for saving M9K ram
 	
-	wire [15:0] Test_q;
+	wire [7:0] Test_q;
 
 	Test_Line	Test_Line_inst (
 	.address   (1'b0 ),

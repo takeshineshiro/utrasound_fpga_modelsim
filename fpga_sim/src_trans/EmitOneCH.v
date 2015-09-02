@@ -4,7 +4,7 @@ module  EmitOneCH
   input         Transmit_CLK,                //100M            
   input         RX_Gate,                    //Transmit Enable
   input   [7:0] EmitDelay,                  //7th bit for Transmit Enable, 6:0 for Delay                   
-  input   [6:0] Emit_Width,                //Emit pulse width
+  input   [5:0] Emit_Width,                //Emit pulse width
   output  reg   TXP,
   output  reg   TXN
   );  

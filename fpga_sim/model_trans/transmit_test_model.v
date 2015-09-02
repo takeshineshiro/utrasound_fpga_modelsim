@@ -27,7 +27,7 @@
      
    
       
-      wire                        Focus_Num_Pre    ;
+      wire   [1:0]               Focus_Num_Pre    ;
 
 
  //reg

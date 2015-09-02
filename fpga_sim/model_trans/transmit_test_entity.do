@@ -29,7 +29,7 @@
  
  #vsim the top
 
-  vsim  -t ps  -novopt  +notimingchecks  -L altera_mf_ver  -L  lpm_ver  -L  sgate_ver  -L   altgxb_ver  -L  cyclone_ver  -L  cycloneiii_ver  -L   cycloneiiils_ver    work.receive_top_module_tb 
+  vsim  -t ps  -novopt  +notimingchecks  -L altera_mf_ver  -L  lpm_ver  -L  sgate_ver  -L   altgxb_ver  -L  cyclone_ver  -L  cycloneiii_ver  -L   cycloneiiils_ver    work.transmit_test_entity_tb 
 
   
  onerror {resume}
@@ -41,7 +41,7 @@
   
 #View sim_tb_top signals in waveform#
 
-add wave sim:receive_top_module_tb/*
+add wave sim:transmit_test_entity_tb/*
 
 
 #Change radix to Hexadecimal#
